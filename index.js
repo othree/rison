@@ -1,6 +1,5 @@
 
 
-
 //////////////////////////////////////////////////
 //
 //  the stringifier is based on
@@ -9,8 +8,12 @@
 //    http://osteele.com/sources/openlaszlo/json
 //
 
-if (typeof rison == 'undefined')
-    window.rison = {};
+/*
+ * if (typeof rison == 'undefined')
+ *    window.rison = {};
+ */
+
+const rison = {};
 
 /**
  *  rules for an uri encoder that is more tolerant than encodeURIComponent
@@ -504,3 +507,4 @@ rison.parser.prototype.next = function () {
     return c;
 };
 
+export default rison;
